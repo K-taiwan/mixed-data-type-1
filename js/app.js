@@ -268,9 +268,25 @@ let bondTitles = [];
 
 //   &#x1F534; **Commit:** "bondTitles array"
 
-
 // 6. Create a new array `oddBonds`, of only the Bond films released on odd-numbered years.
+const oddBonds = [];
+  for(let i = 0; i < bondFilms.length; i++){
+      if(bondFilms[i].year % 2 !== 0){
+        oddBonds.push(bondFilms[i].title);
+      }
+  }
+console.log(oddBonds);
 
+// const oddBonds = [];
+// const oddBondFunc = (obj) =>  {
+//     for(let i = 0; i < obj.length; i++) {
+//         if(obj[i].year % 2 !== 0) {
+//             oddBonds.push(obj[i].title);
+//         }
+//     }
+// }
+// oddBondFunc(bondFilms);
+// console.log(oddBonds);
 //   &#x1F534; **Commit:** "oddBonds"
 
 
