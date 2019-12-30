@@ -326,7 +326,7 @@ for(let i = 0; i < bondFilms.length; i++){
     arr2 += parseInt(bondFilms[i].gross.replace(/[,$]/g, ""));
     
 }
-console.log(arr2);
+console.log(`$${arr2}`);
 
 
 
